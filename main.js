@@ -1,5 +1,5 @@
-var food = {
-  increment: 1
+function test() {
+  var x = document.getElementById("test");
+  x.innerHTML = "Hopefully this will change.";
+  return x;
 }
-
-function
