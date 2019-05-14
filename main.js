@@ -1,10 +1,8 @@
-var e1 = document.querySelector('.toggle');
-
-e1.onclick = function() {
-  el.classList.toggle('active');
-
-function test() {
-  var x = document.getElementById("test");
-  x.innerHTML = "Hopefully this will change.";
-  return x;
+function toggle() {
+  var x = document.getElementById("toggle");
+  if (x.innerHTML === "Unactive") {
+    x.innerHTML = "Active";
+  } else {
+    x.innerHTML = "Unactive"
+  }
 }
