@@ -5,4 +5,5 @@ function toggle() {
   } else {
     x.innerHTML = "Unactive"
   }
+  return x;
 }
