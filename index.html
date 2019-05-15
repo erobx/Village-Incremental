@@ -1,7 +1,18 @@
-<script src="main.js"></script>
-
-<h1>Incremental</h1>
-
-<div id="toggle">Unactive</div>
-
-<button onclick="toggle()">Toggle</button>
+<!DOCTYPE html>
+<head>
+  <script src="main.js"></script>
+  <title>Incremental</title>
+</head>
+<body>
+  <h1>Incremental</h1>
+  <button onclick="increaseFood()">Food</button>
+  <button onclick="increaseWood()">Wood</button>
+  <button onclick="increaseStone()">Stone</button>
+  <div>Food: <span id="food">0</span></div>
+  <div>Wood: <span id="wood">0</span></div>
+  <div>Stone: <span id="stone">0</span></div>
+  <button onclick="buyFarm()">Build Farm for <span id="cost">30</span> Wood/Food</button>
+  <button onclick="buyHut()">Build Hut for <span>10</span> Wood</button>
+  <div>Farms: <span id="farm">0</span></div>
+  <div>Huts: <span id="hut">0</span></div>
+</body>
