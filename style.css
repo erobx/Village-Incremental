@@ -1,1 +1,47 @@
+body {
+  background-color: #727272;
+  color: #fff;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 17px;
+  letter-spacing: 0.4px;
+  word-spacing: 2px;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+
+div {
+  padding-top: 2%;
+  margin-top: 2%;
+}
+
+.myButton {
+  color: rgb(255, 255, 255); 
+  font-size: 15px;
+  line-height: 15px;
+  padding: 5px;
+  border-radius: 7px; 
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 46%, rgb(20, 78, 117) 100%);
+  box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px;
+  border: 2px solid rgb(28, 110, 164);
+  display: inline-block;
+  margin-top: 3%;
+}
+
+.myButton:hover {
+  background: #1C6EA4;
+}
+
+.myButton:active {
+  background: #144E75;
+}
 
