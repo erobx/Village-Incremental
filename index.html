@@ -1,22 +1,50 @@
 <!DOCTYPE html>
-<head>
-  <script src="main.js"></script>
-  <title>Incremental</title>
-</head>
-<body>
-  <h1>Incremental</h1>
-  <button onclick="increaseFood()">Food</button>
-  <button onclick="increaseWood()">Wood</button>
-  <button onclick="increaseStone()">Stone</button>
-  <div>Food: <span id="food">0</span></div>
-  <div>Wood: <span id="wood">0</span></div>
-  <div>Stone: <span id="stone">0</span></div>
-  <button onclick="buyHut()">Build Hut for <span id="hutCost">10</span> Wood</button>
-  <button onclick="buyFarm()">Build Farm for <span id="farmCost">30</span> Wood and Food</button>
-  <button onclick="buySawmill()">Build Sawmill for <span id="sawmillCost">20</span> Wood</button>
-  <button onclick="buyQuarry()">Build Quarry for <span id="quarryCost">30</span> Wood and Stone</button>
-  <div>Huts: <span id="hut">0</span></div>
-  <div>Farms: <span id="farm">0</span></div>
-  <div>Sawmills: <span id="sawmill">0</span></div>
-  <div>Quarries: <span id="quarry">0</span></div>
-</body>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Village</title>
+  </head>
+  <body>
+    <h1>Village</h1>
+    <tr>
+      <td>
+        <button type="button" class="myButton" onclick="increaseFood()">
+          Food
+        </button>
+        <button type="button" class="myButton" onclick="increaseWood()">
+          Wood
+        </button>
+        <button type="button" class="myButton" onclick="increaseStone()">
+          Stone
+        </button>
+      </td>
+      <td>
+        <div>Food: <span id="food">0</span></div>
+        <div>Wood: <span id="wood">0</span></div>
+        <div>Stone: <span id="stone">0</span></div>
+      </td>
+    </tr>
+    <button class="myButton" onclick="buildFarm()">
+      Build Farm for <span id="farmCost">30</span> Wood & Food
+    </button>
+    <button class="myButton" onclick="buildSawmill()">
+      Build Sawmill for <span id="sawmillCost">20</span> Wood
+    </button>
+    <button class="myButton" onclick="buildQuarry()">
+      Build Quarry for <span id="quarryCost">30</span> Wood & Stone
+    </button>
+    <button class="myButton" onclick="buildHut()">
+      Build Hut for <span id="hutCost">30</span> Wood
+    </button>
+    <button class="myButton" onclick="buildHouse()">
+      Build House for <span id="houseCost">30</span> Wood & Stone
+    </button>
+    <div>Farms: <span id="farm">0</span></div>
+    <div>Sawmills: <span id="sawmill">0</span></div>
+    <div>Quarries: <span id="quarry">0</span></div>
+    <div>Huts: <span id="hut">0</span></div>
+    <div>Houses: <span id="house">0</span></div>
+  </body>
+</html>
