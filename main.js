@@ -29,6 +29,29 @@ var food = {
       amount: 0
     }
   }, // Buildings
+  farm = {
+    amount: 0,
+    increment: 0,
+    cost: {
+      wood: 20,
+      food: 20
+    }
+  },
+  sawmill = {
+    amount: 0,
+    increment: 0,
+    cost: {
+      wood: 10
+    }
+  },
+  quarry = {
+    amount: 0,
+    increment: 0,
+    cost: {
+      wood: 20,
+      stone: 20
+    }
+  },
   hut = {
     amount: 0,
     residents: 1,
@@ -43,32 +66,9 @@ var food = {
       wood: 75,
       stone: 25
     }
-  },
-  farm = {
-    amount: 0,
-    increment: 0,
-    cost: {
-      wood: 30,
-      food: 30
-    }
-  },
-  sawmill = {
-    amount: 0,
-    increment: 0,
-    cost: {
-      wood: 20
-    }
-  },
-  quarry = {
-    amount: 0,
-    increment: 0,
-    cost: {
-      wood: 30,
-      stone: 30
-    }
   };
 
-var maxPop = hut.residents * hut.amount + house.residents * house.amount;
+var maxPop = (hut.residents * hut.amount) + (house.residents * house.amount);
 var clickIncrement = 1;
 
 function updateDisplay() {
@@ -121,7 +121,7 @@ function buildFarm() {
     farm.cost.stone = farm.cost.stone.toFixed(0);
     updateDisplay();
   } else {
-    alert("Need more wood/food");
+    alert("Need more wood or food");
   }
 };
 
@@ -152,7 +152,7 @@ function buildQuarry() {
     quarry.cost.stone = quarry.cost.stone.toFixed(0);
     updateDisplay();
   } else {
-    alert("Need more wood/stone");
+    alert("Need more wood or stone");
   }
 };
 
@@ -179,8 +179,6 @@ function buildHouse() {
     house.cost.stone = house.cost.stone.toFixed(0);
     updateDisplay();
   } else {
-    alert("Need more wood & stone");
+    alert("Need more wood or stone");
   }
 };
-
-
