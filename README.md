@@ -1,3 +1,1 @@
-# Village Incremental
-
-My incremental game project/learning process
+# My incremental game project/learning process
